@@ -6,9 +6,20 @@ LABEL org.opencontainers.image.title="Hello Docker with Asp.net core and Docker"
       org.opencontainers.image.description="Dockerized Asp.net core 3.1 app with Angular" \
       org.opencontainers.image.authors="Ranjeeth Malachira Devaiah"
 
+# Remove non root user
+
+RUN useradd -ms /bin/bash app_user
 
 WORKDIR /app
 
 COPY bin/Release/netcoreapp3.1/publish/ ./
+
+#Add read permission for the user
+RUN chown -R app_user /app
+
+#Add the read permission on the folder.
+RUN chmod 755 /app
+
+USER app_user
 
 ENTRYPOINT ["dotnet", "DockerizedApp.dll"]
