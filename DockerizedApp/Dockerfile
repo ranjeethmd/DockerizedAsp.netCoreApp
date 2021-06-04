@@ -14,6 +14,9 @@ WORKDIR /app
 
 COPY bin/Release/netcoreapp3.1/publish/ ./
 
+#Update the environment variables
+ENV ASPNETCORE_URLS=http://+:8080
+
 #Add read permission for the user
 RUN chown -R app_user /app
 
