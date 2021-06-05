@@ -18,3 +18,9 @@ docker run -d  -p 5000:80 --name secure_docker_container ranjeethmd/open-image:s
 
 ## docker compose example
 docker-compose up -d
+
+## kubernetes yaml file
+
+kubectl create -f pod-rc.yml
+
+kubectl create -f svc.yml
