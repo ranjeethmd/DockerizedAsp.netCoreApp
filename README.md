@@ -18,3 +18,11 @@ docker run -d  -p 5000:80 --name first_docker_container ranjeethmd/open-image:fi
 docker-compose up -d
 
 [DockerHub](https://hub.docker.com/r/ranjeethmd/open-image/tags?page=1&ordering=last_updated)
+
+
+
+
+- [x] create asp.net 5 application with angular
+- [x] created automated workflow using git actions 
+- [x] implemented matrix build and testing
+- [x] implemented docker build and dockerhub push
