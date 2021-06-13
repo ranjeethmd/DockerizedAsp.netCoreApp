@@ -1,5 +1,5 @@
-# DockerizedAsp.netCoreApp
- Angular and Asp.net core application
+# What is this
+ This repository contains open source Asp.NET project with Angular framework. This is a basic project to demonstrate the capability of the latest .NET plaform to run on linux aswell as windows. This repository also implements DockerFile to demonstrate that .NET applications can seemlessly run on Docker container. This repository progressively demonstrates the use of github actions to build test and containarize the application as well as use the images in kubernetes. 
 
 ## local run Command
 docker build -t first_docker_image .
