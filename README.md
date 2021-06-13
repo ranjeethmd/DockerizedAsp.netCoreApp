@@ -26,3 +26,6 @@ docker-compose up -d
 - [x] created automated workflow using git actions 
 - [x] implemented matrix build and testing
 - [x] implemented docker build and dockerhub push
+
+
+> .NET Core is open source and runs on linux. .NET 5 unification of multiplatform .NET Core and legacy .NET 4.x framework into single multplaform framework.
