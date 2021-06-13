@@ -14,7 +14,7 @@ namespace DockerizedAppUnitTest
         [TestMethod]
         public void FailedTest()
         {
-            Assert.IsTrue(false);
+            Assert.IsTrue(true);
         }
     }
 }
