@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: demo-core
+  name: hello-deploy
+  labels:
+    app: hello-world
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      namespace: demo-core
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-pod
+        image: ranjeethmd/open-image:git_actions        
+        ports:
+        - containerPort: 8080
+        resources:
+              limits:
+                cpu: "1"
+                memory: "500Mi"
