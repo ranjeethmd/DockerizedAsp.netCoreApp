@@ -9,7 +9,7 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: hello-world  
+      app: hello-world
   template:
     metadata:
       namespace: demo-core
